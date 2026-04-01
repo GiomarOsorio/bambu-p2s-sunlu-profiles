@@ -1,7 +1,5 @@
-# Reference files (not part of this project)
-P2S (Studio Version 2.5.0.66)/SUNLU/
-P2S (Studio Version 2.5.0.66)/SUNLU_HIGH_SPEED_Guide.xlsx
-P2S (Studio Version 2.5.0.66)/Sunlu Filament Guide/
+# Everything except our calibrated profiles
+P2S (Studio Version 2.5.0.66)/
 
 # Claude Code
 .claude/

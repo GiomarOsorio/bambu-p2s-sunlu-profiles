@@ -2,7 +2,9 @@
 
 > A love letter to the 3D printing community and Sunlu users everywhere.
 
-Custom-calibrated filament profiles for the **Bambu Lab P2S** printer with **Sunlu** PETG, PETG HS Matte, PLA, and PLA Wood filaments. These profiles were born from weeks of systematic calibration, testing, and learning --- and from the frustration of extruder jams that the community profiles caused on the P2S.
+[Leer en Espanol](README_ES.md)
+
+Custom-calibrated filament profiles for the **Bambu Lab P2S** printer with **Sunlu** PETG, PETG HS Matte, PLA, and PLA Wood filaments. Built on top of [Jamie Jones Jr's GEN2 profiles](https://makerworld.com/en/models/2435491-jones-sunlu-lightbox-p2s-series-print-profiles) with **per-color calibration** for temperature, flow ratio, and pressure advance.
 
 We share these freely because we believe the maker community grows stronger when knowledge is open. If these profiles save you a failed print or a wasted evening of troubleshooting, then this project has served its purpose.
 
@@ -10,11 +12,11 @@ We share these freely because we believe the maker community grows stronger when
 
 ## The Problem
 
-The [Sunlu GEN2 community profiles](https://makerworld.com/en/models/2435491-jones-sunlu-lightbox-p2s-series-print-profiles) by **Jamie Jones Jr** are an incredible resource --- 503+ configurations covering dozens of Sunlu filaments across multiple Bambu Lab printers. His work is the foundation that made ours possible, and we owe him a massive thank you.
+Jamie Jones Jr's GEN2 community profiles are an incredible resource --- 503+ configurations covering dozens of Sunlu filaments across multiple Bambu Lab printers. His work is the foundation that made ours possible.
 
-However, on the **P2S specifically**, the enclosed chamber design creates a thermal environment that differs from the A1 and other open-frame printers. The GEN2 profiles use an exhaust fan speed of 70%, which on the P2S cools the hotend zone too aggressively. Combined with PETG's low Melt Flow Rate (5.3 g/10min at 230C), this causes the filament to solidify prematurely in the transition zone, leading to **extruder motor overload and jams**.
+However, every color of filament --- even from the same brand and material --- behaves differently. Pigments and additives alter viscosity, flow characteristics, and thermal behavior. A single generic profile can't account for this. **You must calibrate each color individually.**
 
-This project fixes that issue and takes it further: **per-color calibration** for temperature, flow ratio, and pressure advance.
+This project takes Jamie's excellent GEN2 base and adds per-color calibration on top.
 
 ---
 
@@ -22,25 +24,38 @@ This project fixes that issue and takes it further: **per-color calibration** fo
 
 ### PETG (Sunlu Basic)
 
-All PETG profiles share these global settings:
-- **Exhaust fan:** 35% (safe maximum for P2S enclosed chamber)
-- **Part cooling fan:** 10-50% (min-max)
+All PETG profiles are built on Jamie's GEN2 PETG BASIC base with these shared settings:
+- **Exhaust fan:** 70% with M142 dynamic gcode control
+- **Part cooling fan:** 30-60% (min-max)
+- **Overhang fan:** 90% at 95% threshold
+- **Max volumetric speed:** 16 mm3/s
 - **Pre-cooling temperature:** 190C (for clean AMS cutter cuts)
 - **Cut retraction distance:** 20mm
 - **Z-hop:** 0.2mm with Spiral Lift
 
 | Color | Temp (C) | Flow Ratio | Pressure Advance | Hex |
 |-------|----------|------------|-----------------|-----|
-| Negro | 245 | 1.010 | 0.029 | `#000000` |
-| Blanco | 240 | 0.989 | 0.032 | `#FFFFFF` |
-| Rojo | 245 | 0.989 | 0.052 | `#FF0000` |
-| Azul | 250 | 0.97 | 0.046 | `#0000FF` |
-| Amarillo | 250 | 0.989 | 0.035 | `#FFD700` |
-| Verde Oliva | 235 | 0.938 | 0.046 | `#708238` |
-| Morado | 245 | 0.967 | 0.031 | `#800080` |
-| Rosa | 245 | 1.010 | 0.032 | `#FF69B4` |
-| Beige Piel | 240 | 0.979 | 0.030 | `#D2B48C` |
-| Gris | 245 | 0.979 | 0.045 | `#808080` |
+| Black | 245 | 1.010 | 0.029 | `#000000` |
+| White | 240 | 0.989 | 0.032 | `#FFFFFF` |
+| Red | 245 | 0.989 | 0.052 | `#FF0000` |
+| Blue | 250 | 0.97 | 0.046 | `#0000FF` |
+| Yellow | 250 | 0.989 | 0.035 | `#FFD700` |
+| Olive Green | 235 | 0.938 | 0.046 | `#708238` |
+| Purple | 245 | 0.967 | 0.031 | `#800080` |
+| Pink | 245 | 1.010 | 0.032 | `#FF69B4` |
+| Skin Beige | 240 | 0.979 | 0.030 | `#D2B48C` |
+| Gray | 245 | 0.979 | 0.045 | `#808080` |
+
+**PETG Ironing settings (process profile):**
+
+| Setting | Value |
+|---------|-------|
+| Pattern | Rectilinear |
+| Speed | 30 mm/s |
+| Flow | 50% |
+| Line spacing | 0.15 mm |
+| Inset | 0.21 mm |
+| Angle | 45 degrees |
 
 ### PETG HS Matte (Sunlu High Speed)
 
@@ -54,13 +69,13 @@ HS Matte profiles use **0% exhaust** (different thermal behavior), fan 25-50%, h
 
 | Color | Temp (C) | Flow Ratio | Hex |
 |-------|----------|------------|-----|
-| Marmol | 220 | 0.966 | `#E8E0D0` |
+| Marble | 220 | 0.966 | `#E8E0D0` |
 
 PLA profiles use **pre-cooling 170C** and cut retraction 20mm.
 
 ### Base Templates
 
-Templates for calibrating new colors are included:
+Templates for calibrating new colors:
 - `PETG - Base.json` --- Starting point for new PETG colors
 - `PETG HS Matte - Base.json` --- Starting point for HS Matte colors
 - `PLA - Base.json` --- Starting point for PLA colors
@@ -79,53 +94,35 @@ Templates for calibrating new colors are included:
 
 ### Calibrating a New Color
 
-Every color of filament --- even from the same brand and material --- behaves differently. Pigments and additives alter viscosity, flow characteristics, and thermal behavior. **You must calibrate each color individually.**
-
 Follow this workflow in order (each step depends on the previous one being stable):
 
 #### Step 1: Temperature Tower
 
-**What:** Print a temperature tower to find the optimal nozzle temperature for your specific color.
-
-**How:** In Bambu Studio, go to the calibration menu and select **Temperature Tower**. If you don't see it, enable **Developer Mode** in preferences first. The tower prints at decreasing temperatures from top to bottom.
+Print a temperature tower to find the optimal nozzle temperature. In Bambu Studio, go to the calibration menu and select **Temperature Tower** (enable Developer Mode in preferences if you don't see it).
 
 **What to look for:**
-- **Stringing** between sections = temperature too high (filament too fluid, oozes during travel)
-- **Sagging bridges** = temperature too high (not enough viscosity to hold shape)
-- **Delamination / weak layers** = temperature too cold (poor inter-layer bonding)
+- **Stringing** = temperature too high (filament too fluid)
+- **Sagging bridges** = temperature too high (not enough viscosity)
+- **Delamination / weak layers** = temperature too cold (poor bonding)
 - **Rough surface** = temperature too cold (poor flow)
 
-Pick the **lowest temperature** that still gives clean bridges and strong layer adhesion.
-
-**Why it matters:** A 5C change can shift flow ratio by 2-4% in PETG. Temperature must be locked in first because every subsequent calibration depends on it.
+Pick the **lowest temperature** that gives clean bridges and strong layer adhesion.
 
 #### Step 2: Flow Ratio
 
-**What:** Calibrate how much filament the extruder actually pushes vs what the slicer expects.
+We use the [Improved Flow Ratio Calibration V3](https://makerworld.com/en/models/189543-improved-flow-ratio-calibration-v3) model. Print it and measure the single-wall line widths with calipers. Flow ratio = expected width / measured width.
 
-**How:** We use the [Improved Flow Ratio Calibration V3](https://makerworld.com/en/models/189543-improved-flow-ratio-calibration-v3) model from MakerWorld. Print it and measure the single-wall line widths with calipers. The model generates a correction factor.
-
-**Why per-color:** Pigments change melt viscosity and die swell behavior. Darker pigments (carbon black) increase viscosity; lighter/translucent formulations flow more easily. Our PETG colors range from 0.938 (Verde Oliva) to 1.010 (Negro, Rosa) --- a 7% spread within the same brand and material.
-
-**Theory:** Flow ratio = expected width / measured width. Values below 1.0 mean the printer is over-extruding; above 1.0 means under-extruding. Typical PETG range: 0.92-1.01.
+**Why per-color:** Pigments change melt viscosity and die swell. Our PETG colors range from 0.938 (Olive Green) to 1.010 (Black, Pink) --- a 7% spread within the same brand and material.
 
 #### Step 3: Pressure Advance (PA)
 
-**What:** Compensate for the pressure buildup inside the melt zone between the drive gear and nozzle tip.
+Use the built-in **Pressure Advance** calibration in Bambu Studio. It prints lines at different K factor values. Look for the value where corners are sharp without bulging or gaps.
 
-**How:** In Bambu Studio, use the built-in **Pressure Advance** calibration (in the calibration menu). It prints a pattern of lines at different K factor values. Look for the value where corners are sharp without bulging or gaps.
-
-**What PA does:** Without compensation, pressure lags behind commanded flow:
-- Before corners: pressure is still high when the head decelerates, causing **bulging**
-- After corners: pressure is too low when the head accelerates, causing **gaps**
-
-PA slightly retracts filament proportional to deceleration (before corners) and advances it during acceleration (after corners).
-
-**The K factor** defines how aggressively this compensation acts. Our PETG values range from 0.029 (Negro) to 0.052 (Rojo). Too high = under-extrusion at corners; too low = corner bulges.
+Our PETG values range from 0.029 (Black) to 0.052 (Red).
 
 #### Step 4: Retraction (if needed)
 
-If you see stringing after PA calibration, fine-tune retraction length. Most of our PETG colors work well at the default 0.7mm/0.4mm (Standard/High Flow).
+If you see stringing after PA calibration, fine-tune retraction length. Most of our PETG colors work well at the default values.
 
 ---
 
@@ -133,82 +130,71 @@ If you see stringing after PA calibration, fine-tune retraction length. Most of 
 
 ### Why the P2S is Different
 
-The P2S is a fully enclosed printer. This is great for temperature-sensitive materials (less warping, more consistent layers), but it creates challenges for PETG:
+The P2S is a fully enclosed printer. This creates challenges for PETG:
 
 1. **Heat accumulates** in the chamber during long prints
-2. **The exhaust fan** (called "Escape" in Bambu's app) is meant to vent this heat, but it also cools the hotend zone
-3. **PETG has low MFR** (Melt Flow Rate: 5.3 g/10min) --- it resists flow. If the hotend zone cools even slightly, viscosity spikes and the extruder motor stalls
+2. **The exhaust fan** vents this heat, but also cools the hotend zone
+3. **PETG has low MFR** (5.3 g/10min) --- if the hotend zone cools even slightly, viscosity spikes and the extruder stalls
 
-### Exhaust Fan: The Balancing Act
+### Dynamic Exhaust Control (M142)
 
-| Exhaust % | Effect on P2S |
-|-----------|---------------|
-| 0-20% | Safe, minimal chamber cooling. May get too hot on long prints |
-| **35%** | **Sweet spot.** Enough ventilation without cooling the hotend |
-| 50-70% | Risk zone. May cause intermittent jams depending on ambient temperature |
-| 100% | **Will cause motor overload with PETG.** Confirmed through testing |
+Jamie's GEN2 profiles solve the exhaust problem with custom gcode in `filament_start_gcode`:
 
-> **Pro tip:** If you want more cooling (like simulating an open door), increase the exhaust fan **manually from the Bambu app during printing** rather than setting it in the profile. This lets you find the limit for your specific environment without baking a dangerous value into the profile.
+```gcode
+M142 P6 R30 S40 U0.3 V0.8 ; PETG exhaust control
+```
 
-### Part Cooling Fan: Quality vs Adhesion
-
-The part cooling fan blows directly on the freshly deposited layer:
-- **Too little** (< 25%): Poor surface quality, sagging overhangs, the layer stays soft too long
-- **Too much** (> 70%): Rapid cooling impairs inter-layer bonding, risk of delamination
-- **Our setting** (10-50%): Balanced compromise for PETG
-
-**Key finding:** Printing with the P2S door open dramatically improves surface quality. The ambient cooling is more uniform than fan cooling. This confirmed that part cooling was the main quality bottleneck, not the exhaust fan.
+This uses the M142 command for **dynamic exhaust management** rather than a static fan speed, allowing the printer to adapt exhaust intensity based on chamber conditions. This is a major improvement over our earlier approach of capping exhaust at 35%.
 
 ### Pre-cooling Temperature: Clean Cuts in Multicolor
 
-When the AMS changes filament, the nozzle cools down before the cutter engages to make the filament rigid enough for a clean cut:
-- **Too hot** (> 210C): Filament is still soft/stringy, messy cut, deformed tip that jams on reload
-- **Too cold** (< 180C): Filament becomes too rigid, motor can't push the solidified plug afterward
-- **Our value** (190C for PETG, 170C for PLA): Clean cut, reliable reload
+When the AMS changes filament, the nozzle cools before cutting:
+- **Too hot** (> 210C): Filament still soft, messy cut
+- **Too cold** (< 180C): Filament too rigid, motor overload on reload
+- **Our value:** 190C for PETG, 170C for PLA
 
-> **Important:** The `filament_pre_cooling_temperature_nc` (non-cutter) value must stay at 215C for PETG. Lowering it to 190C causes motor overload. Only the cutter version (`filament_pre_cooling_temperature`) should be 190C.
+> **Important:** The `filament_pre_cooling_temperature_nc` (non-cutter) value must stay at 215C for PETG. Lowering it to 190C causes motor overload.
 
 ### Cut Retraction Distance
 
-Before cutting, the filament retracts 20mm to pull the molten tip back and create a thin, cuttable section at the blade location. Too short = cut on soft filament = deformed tip. Too long = air pulled into melt zone = voids on next extrusion.
+Before cutting, the filament retracts 20mm to pull the molten tip back and create a clean, cuttable section. Too short = cut on soft filament. Too long = air pulled into melt zone.
 
 ---
 
 ## Project Structure
 
 ```
-P2S (Studio Version 2.5.0.66)/
-  SUNLU - P2S Fix/
-    0.4 nozzle/
-      PETG - Negro.json
-      PETG - Blanco.json
-      PETG - Rojo.json
-      PETG - Azul.json
-      PETG - Amarillo.json
-      PETG - Verde Oliva.json
-      PETG - Morado.json
-      PETG - Rosa.json
-      PETG - Beige Piel.json
-      PETG - Gris.json
+SUNLU/
+  0.4/
+    PETG/
+      PETG - Black.json
+      PETG - White.json
+      PETG - Red.json
+      PETG - Blue.json
+      PETG - Yellow.json
+      PETG - Olive Green.json
+      PETG - Purple.json
+      PETG - Pink.json
+      PETG - Skin Beige.json
+      PETG - Gray.json
       PETG - Base.json
       PETG HS Matte - Mint Green.json
       PETG HS Matte - Base.json
+    PLA/
       PLA - Base.json
       PLA Wood - Base.json
-      PLA Marmol.json
+      PLA Marble.json
 ```
 
 ---
 
 ## Acknowledgments
 
-This project would not exist without:
-
-- **[Jamie Jones Jr](https://makerworld.com/en/models/2435491-jones-sunlu-lightbox-p2s-series-print-profiles)** --- Creator of the Sunlu GEN2 community profiles (503+ configurations). His work is the foundation we built upon. He is currently rebuilding all profiles from scratch for even better results. Thank you, Jamie.
+- **[Jamie Jones Jr](https://makerworld.com/en/models/2435491-jones-sunlu-lightbox-p2s-series-print-profiles)** --- Creator of the Sunlu GEN2 community profiles (503+ configurations). His GEN2 PETG BASIC profile is the structural base for all our PETG profiles. Thank you, Jamie.
 
 - **[Improved Flow Ratio Calibration V3](https://makerworld.com/en/models/189543-improved-flow-ratio-calibration-v3)** --- The MakerWorld model we used for precise flow calibration of every color.
 
-- **The Sunlu Profiles Discord community** --- For sharing knowledge, troubleshooting together, and pushing the boundaries of what these affordable filaments can do.
+- **The Sunlu Profiles Discord community** --- For sharing knowledge and troubleshooting together.
 
 - **Sunlu** --- For making quality filaments accessible to everyone.
 
@@ -216,13 +202,11 @@ This project would not exist without:
 
 ## Contributing
 
-Found a better setting? Calibrated a color we don't have? We'd love your contribution:
+Found a better setting? Calibrated a color we don't have?
 
 1. Fork this repo
 2. Calibrate your color following the workflow above (temperature -> flow -> PA)
-3. Submit a PR with your calibrated profile
-
-Please include your calibration values and any observations in the PR description.
+3. Submit a PR with your calibrated profile and values in the description
 
 ---
 
