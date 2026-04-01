@@ -2,9 +2,9 @@
   "type": "filament",
   "filament_id": "S7319824",
   "version": "2.5.0.66",
-  "name": "PETG - Blanco",
+  "name": "PETG - Skin Beige",
   "filament_settings_id": [
-    "PETG - Blanco"
+    "PETG - Skin Beige"
   ],
   "description": "",
   "from": "User",
@@ -17,7 +17,7 @@
   "compatible_prints": [],
   "compatible_prints_condition": "",
   "default_filament_colour": [
-    "#FFFFFF"
+    "#D2B48C"
   ],
   "filament_type": [
     "PETG"
@@ -45,7 +45,7 @@
     "1"
   ],
   "pressure_advance": [
-    "0.032"
+    "0.03"
   ],
   "activate_air_filtration": [
     "0"
@@ -183,7 +183,7 @@
     "1"
   ],
   "filament_flow_ratio": [
-    "0.989",
+    "0.979",
     "0.95"
   ],
   "filament_flush_temp": [

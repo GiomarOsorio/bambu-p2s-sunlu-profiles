@@ -2,9 +2,9 @@
   "type": "filament",
   "filament_id": "S7319824",
   "version": "2.5.0.66",
-  "name": "PETG - Gris",
+  "name": "PETG - Olive Green",
   "filament_settings_id": [
-    "PETG - Gris"
+    "PETG - Olive Green"
   ],
   "description": "",
   "from": "User",
@@ -17,7 +17,7 @@
   "compatible_prints": [],
   "compatible_prints_condition": "",
   "default_filament_colour": [
-    "#808080"
+    "#708238"
   ],
   "filament_type": [
     "PETG"
@@ -45,7 +45,7 @@
     "1"
   ],
   "pressure_advance": [
-    "0.045"
+    "0.046"
   ],
   "activate_air_filtration": [
     "0"
@@ -183,7 +183,7 @@
     "1"
   ],
   "filament_flow_ratio": [
-    "0.979",
+    "0.938",
     "0.95"
   ],
   "filament_flush_temp": [
@@ -394,12 +394,12 @@
     "0"
   ],
   "nozzle_temperature": [
-    "245",
-    "250"
+    "235",
+    "240"
   ],
   "nozzle_temperature_initial_layer": [
-    "240",
-    "245"
+    "230",
+    "235"
   ],
   "nozzle_temperature_range_high": [
     "260"

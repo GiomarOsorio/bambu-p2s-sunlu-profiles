@@ -2,9 +2,9 @@
   "type": "filament",
   "filament_id": "S7319824",
   "version": "2.5.0.66",
-  "name": "PETG - Beige Piel",
+  "name": "PETG - Pink",
   "filament_settings_id": [
-    "PETG - Beige Piel"
+    "PETG - Pink"
   ],
   "description": "",
   "from": "User",
@@ -17,7 +17,7 @@
   "compatible_prints": [],
   "compatible_prints_condition": "",
   "default_filament_colour": [
-    "#D2B48C"
+    "#FF69B4"
   ],
   "filament_type": [
     "PETG"
@@ -45,7 +45,7 @@
     "1"
   ],
   "pressure_advance": [
-    "0.03"
+    "0.032"
   ],
   "activate_air_filtration": [
     "0"
@@ -183,7 +183,7 @@
     "1"
   ],
   "filament_flow_ratio": [
-    "0.979",
+    "1.010",
     "0.95"
   ],
   "filament_flush_temp": [
@@ -394,12 +394,12 @@
     "0"
   ],
   "nozzle_temperature": [
-    "240",
-    "245"
+    "245",
+    "250"
   ],
   "nozzle_temperature_initial_layer": [
-    "235",
-    "240"
+    "240",
+    "245"
   ],
   "nozzle_temperature_range_high": [
     "260"
