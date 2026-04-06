@@ -51,7 +51,7 @@
         "-0.035"
     ],
     "default_filament_colour": [
-        ""
+        "#8B6F47"
     ],
     "during_print_exhaust_fan_speed": [
         "70"
@@ -154,7 +154,7 @@
         "Direct Drive High Flow"
     ],
     "filament_flow_ratio": [
-        "0.98",
+        "1.010",
         "0.98"
     ],
     "filament_flush_temp": [
@@ -279,7 +279,7 @@
         "none"
     ],
     "filament_settings_id": [
-        "PLA Wood - Base"
+        "PLA Wood"
     ],
     "filament_start_gcode": [
         "; filament start gcode\n"
@@ -360,16 +360,16 @@
         "0",
         "0"
     ],
-    "name": "PLA Wood - Base",
+    "name": "PLA Wood",
     "no_slow_down_for_cooling_on_outwalls": [
         "0"
     ],
     "nozzle_temperature": [
-        "220",
+        "215",
         "220"
     ],
     "nozzle_temperature_initial_layer": [
-        "220",
+        "215",
         "220"
     ],
     "nozzle_temperature_range_high": [
@@ -395,7 +395,7 @@
         "0"
     ],
     "pressure_advance": [
-        "0.02"
+        "0.03"
     ],
     "reduce_fan_stop_start_freq": [
         "1"

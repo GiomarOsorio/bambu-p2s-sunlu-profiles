@@ -51,7 +51,7 @@
         "-0.035"
     ],
     "default_filament_colour": [
-        ""
+        "#B87333"
     ],
     "during_print_exhaust_fan_speed": [
         "70"
@@ -99,10 +99,10 @@
         "0"
     ],
     "filament_cost": [
-        "18.99"
+        "29.99"
     ],
     "filament_density": [
-        "1.17"
+        "1.23"
     ],
     "filament_deretraction_speed": [
         "nil",
@@ -154,28 +154,28 @@
         "Direct Drive High Flow"
     ],
     "filament_flow_ratio": [
-        "0.98",
+        "1",
         "0.98"
     ],
     "filament_flush_temp": [
-        "0",
-        "0"
+        "200",
+        "200"
     ],
     "filament_flush_volumetric_speed": [
         "0",
         "0"
     ],
-    "filament_id": "S8174936",
+    "filament_id": "SUN20019",
     "filament_is_support": [
         "0"
     ],
     "filament_long_retractions_when_cut": [
-        "1",
-        "1"
+        "nil",
+        "nil"
     ],
     "filament_max_volumetric_speed": [
-        "18",
-        "18"
+        "12",
+        "12"
     ],
     "filament_minimal_purge_on_wipe_tower": [
         "15"
@@ -251,12 +251,12 @@
         "1"
     ],
     "filament_retraction_distances_when_cut": [
-        "20",
-        "20"
+        "nil",
+        "nil"
     ],
     "filament_retraction_length": [
-        "1",
-        "1"
+        "0.6",
+        "0.6"
     ],
     "filament_retraction_minimum_travel": [
         "2",
@@ -279,7 +279,7 @@
         "none"
     ],
     "filament_settings_id": [
-        "PLA Wood - Base"
+        "PLA Silk - Copper"
     ],
     "filament_start_gcode": [
         "; filament start gcode\n"
@@ -353,30 +353,30 @@
         "55"
     ],
     "impact_strength_z": [
-        "10"
+        "8.5"
     ],
     "inherits": "",
     "long_retractions_when_ec": [
         "0",
         "0"
     ],
-    "name": "PLA Wood - Base",
+    "name": "PLA Silk - Copper",
     "no_slow_down_for_cooling_on_outwalls": [
         "0"
     ],
     "nozzle_temperature": [
         "220",
-        "220"
+        "225"
     ],
     "nozzle_temperature_initial_layer": [
         "220",
-        "220"
+        "225"
     ],
     "nozzle_temperature_range_high": [
-        "260"
+        "240"
     ],
     "nozzle_temperature_range_low": [
-        "195"
+        "210"
     ],
     "overhang_fan_speed": [
         "100"
@@ -395,13 +395,13 @@
         "0"
     ],
     "pressure_advance": [
-        "0.02"
+        "0.037"
     ],
     "reduce_fan_stop_start_freq": [
         "1"
     ],
     "required_nozzle_HRC": [
-        "60"
+        "3"
     ],
     "retraction_distances_when_ec": [
         "0",
@@ -411,7 +411,7 @@
         "1"
     ],
     "slow_down_layer_time": [
-        "4"
+        "6"
     ],
     "slow_down_min_speed": [
         "20",
