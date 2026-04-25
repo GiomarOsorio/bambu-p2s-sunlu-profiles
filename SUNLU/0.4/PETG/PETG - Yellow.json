@@ -1,6 +1,6 @@
 {
   "type": "filament",
-  "filament_id": "S7319824",
+  "filament_id": "SUN22001",
   "version": "2.5.0.66",
   "name": "PETG - Yellow",
   "filament_settings_id": [
@@ -45,7 +45,7 @@
     "1"
   ],
   "pressure_advance": [
-    "0.035"
+    "0.034"
   ],
   "activate_air_filtration": [
     "0"
@@ -183,7 +183,7 @@
     "1"
   ],
   "filament_flow_ratio": [
-    "0.989",
+    "0.9984",
     "0.95"
   ],
   "filament_flush_temp": [
@@ -394,12 +394,12 @@
     "0"
   ],
   "nozzle_temperature": [
-    "250",
-    "255"
-  ],
-  "nozzle_temperature_initial_layer": [
     "245",
     "250"
+  ],
+  "nozzle_temperature_initial_layer": [
+    "240",
+    "245"
   ],
   "nozzle_temperature_range_high": [
     "260"

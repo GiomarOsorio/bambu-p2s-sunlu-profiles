@@ -153,6 +153,7 @@
     "Direct Drive Standard",
     "Direct Drive High Flow"
   ],
+  "filament_id": "SUN20006",
   "filament_flow_ratio": [
     "0.96628",
     "0.98"
