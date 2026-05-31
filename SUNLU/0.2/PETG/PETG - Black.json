@@ -2,9 +2,9 @@
   "type": "filament",
   "filament_id": "SUN22001",
   "version": "2.5.0.66",
-  "name": "PETG - White",
+  "name": "PETG - Black",
   "filament_settings_id": [
-    "PETG - White"
+    "PETG - Black"
   ],
   "description": "",
   "from": "User",
@@ -17,7 +17,7 @@
   "compatible_prints": [],
   "compatible_prints_condition": "",
   "default_filament_colour": [
-    "#FFFFFF"
+    "#000000"
   ],
   "filament_type": [
     "PETG"
@@ -45,7 +45,7 @@
     "1"
   ],
   "pressure_advance": [
-    "0.023"
+    "0.029"
   ],
   "activate_air_filtration": [
     "0"
@@ -183,7 +183,7 @@
     "1"
   ],
   "filament_flow_ratio": [
-    "1.040",
+    "1.051",
     "0.95"
   ],
   "filament_flush_temp": [
@@ -212,7 +212,7 @@
   "filament_minimal_purge_on_wipe_tower": [
     "15"
   ],
-  "filament_notes": "Ironing: 20% flow, 20 mm/s",
+  "filament_notes": "Ironing: 15% flow, 20 mm/s",
   "filament_overhang_1_4_speed": [
     "0",
     "0"
@@ -395,15 +395,15 @@
     "0"
   ],
   "nozzle_temperature": [
-    "255",
-    "255"
+    "260",
+    "260"
   ],
   "nozzle_temperature_initial_layer": [
-    "255",
-    "255"
+    "260",
+    "260"
   ],
   "nozzle_temperature_range_high": [
-    "260"
+    "265"
   ],
   "nozzle_temperature_range_low": [
     "240"
