@@ -45,7 +45,7 @@
     "1"
   ],
   "pressure_advance": [
-    "0.023"
+    "0.02"
   ],
   "activate_air_filtration": [
     "0"
@@ -183,7 +183,7 @@
     "1"
   ],
   "filament_flow_ratio": [
-    "1.040",
+    "0.95",
     "0.95"
   ],
   "filament_flush_temp": [
@@ -212,7 +212,6 @@
   "filament_minimal_purge_on_wipe_tower": [
     "15"
   ],
-  "filament_notes": "Ironing: 20% flow, 20 mm/s",
   "filament_overhang_1_4_speed": [
     "0",
     "0"

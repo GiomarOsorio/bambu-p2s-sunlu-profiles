@@ -2,9 +2,9 @@
   "type": "filament",
   "filament_id": "SUN22001",
   "version": "2.5.0.66",
-  "name": "PETG - Black",
+  "name": "PETG - Yellow",
   "filament_settings_id": [
-    "PETG - Black"
+    "PETG - Yellow"
   ],
   "description": "",
   "from": "User",
@@ -17,7 +17,7 @@
   "compatible_prints": [],
   "compatible_prints_condition": "",
   "default_filament_colour": [
-    "#000000"
+    "#FFFF00"
   ],
   "filament_type": [
     "PETG"
@@ -394,15 +394,15 @@
     "0"
   ],
   "nozzle_temperature": [
-    "260",
-    "260"
+    "255",
+    "255"
   ],
   "nozzle_temperature_initial_layer": [
-    "260",
-    "260"
+    "255",
+    "255"
   ],
   "nozzle_temperature_range_high": [
-    "265"
+    "260"
   ],
   "nozzle_temperature_range_low": [
     "240"

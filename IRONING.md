@@ -4,7 +4,5 @@ Per-color ironing settings tuned on Bambu Lab P2S. Values empirical — adjust p
 
 ## SUNLU PETG (0.2 nozzle)
 
-| Color | Flow | Speed    | Notes |
-|-------|------|----------|-------|
-| White | 20%  | 20 mm/s  | Tuned at night; may revise after daylight check |
-| Black | 15%  | 20 mm/s  |       |
+| Color | Flow | Speed | Notes |
+|-------|------|-------|-------|
