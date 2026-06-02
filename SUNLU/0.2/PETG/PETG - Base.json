@@ -2,9 +2,9 @@
   "type": "filament",
   "filament_id": "SUN22001",
   "version": "2.5.0.66",
-  "name": "PETG - Base",
+  "name": "PETG - Base 0.2",
   "filament_settings_id": [
-    "PETG - Base"
+    "PETG - Base 0.2"
   ],
   "description": "",
   "from": "User",
