@@ -6,7 +6,7 @@
   "filament_settings_id": [
     "PETG - Black 0.2"
   ],
-  "description": "",
+  "description": "Ironing: 40% flow, 10 mm/s",
   "from": "User",
   "inherits": "",
   "include": [],
@@ -45,7 +45,7 @@
     "1"
   ],
   "pressure_advance": [
-    "0.02"
+    "0.043"
   ],
   "activate_air_filtration": [
     "0"
@@ -183,7 +183,7 @@
     "1"
   ],
   "filament_flow_ratio": [
-    "0.95",
+    "0.67",
     "0.95"
   ],
   "filament_flush_temp": [
@@ -206,8 +206,8 @@
     "nil"
   ],
   "filament_max_volumetric_speed": [
-    "2.5",
-    "2.5"
+    "1.0",
+    "1.0"
   ],
   "filament_minimal_purge_on_wipe_tower": [
     "15"
@@ -394,15 +394,15 @@
     "0"
   ],
   "nozzle_temperature": [
-    "260",
-    "260"
+    "255",
+    "255"
   ],
   "nozzle_temperature_initial_layer": [
-    "260",
-    "260"
+    "255",
+    "255"
   ],
   "nozzle_temperature_range_high": [
-    "265"
+    "260"
   ],
   "nozzle_temperature_range_low": [
     "240"

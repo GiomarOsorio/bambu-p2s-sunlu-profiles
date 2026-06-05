@@ -6,3 +6,5 @@ Per-color ironing settings tuned on Bambu Lab P2S. Values empirical — adjust p
 
 | Color | Flow | Speed | Notes |
 |-------|------|-------|-------|
+| White | 25% | 20 mm/s | |
+| Black | 40% | 10 mm/s | |
