@@ -6,7 +6,7 @@
   "filament_settings_id": [
     "PETG - Black 0.2"
   ],
-  "description": "Ironing: 40% flow, 10 mm/s",
+  "description": "Ironing: 27% flow, 10 mm/s",
   "from": "User",
   "inherits": "",
   "include": [],
@@ -45,7 +45,7 @@
     "1"
   ],
   "pressure_advance": [
-    "0.043"
+    "0.06"
   ],
   "activate_air_filtration": [
     "0"
@@ -183,7 +183,7 @@
     "1"
   ],
   "filament_flow_ratio": [
-    "0.68",
+    "0.95",
     "0.95"
   ],
   "filament_flush_temp": [
