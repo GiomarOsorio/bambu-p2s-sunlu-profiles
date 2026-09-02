@@ -62,6 +62,8 @@ All PETG profiles are built on Jamie's GEN2 PETG BASIC base with these shared se
 | Color | Temp (C) | Flow Ratio | Pressure Advance | Hex |
 |-------|----------|------------|-----------------|-----|
 | Mint Green | 235 | 0.9984 | 0.032 | `#98FF98` |
+| Gray | 245 | 0.9984 | 0.034 | `#808080` |
+| Orange | 250 | 0.936 | 0.046 | `#FF6600` |
 
 HS Matte profiles use **0% exhaust** (different thermal behavior), fan 25-50%, hot plate 80/85C.
 
@@ -179,6 +181,8 @@ SUNLU/
       PETG - Gray.json
       PETG - Base.json
       PETG HS Matte - Mint Green.json
+      PETG HS Matte - Gray.json
+      PETG HS Matte - Orange.json
       PETG HS Matte - Base.json
     PLA/
       PLA - Base.json

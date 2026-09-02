@@ -38,6 +38,8 @@ Los nombres de los perfiles estan en ingles. Esta tabla te ayuda a identificar c
 | PETG - Gray | Gris |
 | PETG - Base | Base (plantilla) |
 | PETG HS Matte - Mint Green | Verde Menta |
+| PETG HS Matte - Gray | Gris |
+| PETG HS Matte - Orange | Naranja |
 | PETG HS Matte - Base | Base HS Matte (plantilla) |
 | PLA - Base | Base PLA (plantilla) |
 | PLA Wood - Base | Base PLA Madera (plantilla) |
@@ -87,6 +89,8 @@ Todos los perfiles PETG estan construidos sobre la base GEN2 PETG BASIC de Jamie
 | Color | Temp (C) | Ratio de Flujo | Pressure Advance | Hex |
 |-------|----------|----------------|-----------------|-----|
 | Mint Green (Verde Menta) | 235 | 0.9984 | 0.032 | `#98FF98` |
+| Gray (Gris) | 245 | 0.9984 | 0.034 | `#808080` |
+| Orange (Naranja) | 250 | 0.936 | 0.046 | `#FF6600` |
 
 Los perfiles HS Matte usan **0% escape** (comportamiento termico diferente), ventilador 25-50%, cama caliente 80/85C.
 
@@ -200,6 +204,8 @@ SUNLU/
       PETG - Gray.json
       PETG - Base.json
       PETG HS Matte - Mint Green.json
+      PETG HS Matte - Gray.json
+      PETG HS Matte - Orange.json
       PETG HS Matte - Base.json
     PLA/
       PLA - Base.json
