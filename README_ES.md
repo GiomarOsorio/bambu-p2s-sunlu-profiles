@@ -62,7 +62,7 @@ Todos los perfiles PETG estan construidos sobre la base GEN2 PETG BASIC de Jamie
 
 | Color | Temp (C) | Ratio de Flujo | Pressure Advance | Hex |
 |-------|----------|----------------|-----------------|-----|
-| Black (Negro) | 245 | 1.010 | 0.029 | `#000000` |
+| Black (Negro) | 245 | 0.94525 | 0.042 | `#000000` |
 | White (Blanco) | 240 | 0.989 | 0.032 | `#FFFFFF` |
 | Red (Rojo) | 245 | 0.989 | 0.052 | `#FF0000` |
 | Blue (Azul) | 250 | 0.97 | 0.046 | `#0000FF` |
@@ -141,7 +141,7 @@ Elige la **temperatura mas baja** que de puentes limpios y buena adhesion entre 
 
 Usamos el modelo [Improved Flow Ratio Calibration V3](https://makerworld.com/en/models/189543-improved-flow-ratio-calibration-v3). Imprimelo y mide el ancho de las paredes con un calibrador. Ratio de flujo = ancho esperado / ancho medido.
 
-**Por que por color:** Los pigmentos cambian la viscosidad y el die swell. Nuestros PETG van de 0.938 (Olive Green) a 1.010 (Black, Pink) --- un 7% de diferencia dentro de la misma marca y material.
+**Por que por color:** Los pigmentos cambian la viscosidad y el die swell. Nuestros PETG van de 0.938 (Olive Green) a 1.010 (Pink) --- un 7% de diferencia dentro de la misma marca y material.
 
 #### Paso 3: Pressure Advance (PA)
 
