@@ -32,7 +32,7 @@ to 260 °C and roughly doubled pressure advance. Both need remeasuring.
 
 | Color | Flow | Speed | Notes |
 |-------|------|-------|-------|
-| Gold | 20% | 20 mm/s | spacing 0.15mm, inset 0.21mm, angle 45° |
+| Gold | 45% | 25 mm/s | spacing 0.15mm, inset 0.21mm, angle 45° — 0.20 mm layer, remeasured 2026-11-06 after flow 0.910602 / PA 0.040 |
 
 ## Test plates
 

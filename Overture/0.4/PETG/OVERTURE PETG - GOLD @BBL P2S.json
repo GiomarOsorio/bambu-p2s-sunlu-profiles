@@ -1,6 +1,7 @@
 {
     "type": "filament",
     "name": "OVERTURE PETG GOLD @BBL P2S",
+    "description": "Ironing: 45% flow, 25 mm/s",
     "from": "User",
     "instantiation": "true",
     "cool_plate_temp": [
