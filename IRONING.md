@@ -16,11 +16,8 @@ otherwise.
 
 | Color | Flow | Speed | Notes |
 |-------|------|-------|-------|
-| White | 25% | 20 mm/s | spacing 0.15mm, inset 0.11mm, angle 45° — brass nozzle, stale |
-| Black | 27% | 10 mm/s | spacing 0.15mm, inset 0.11mm, angle 45° — brass nozzle, stale |
-
-White and Black predate the switch to the stainless steel 0.2 nozzle, which moved temps
-to 260 °C and roughly doubled pressure advance. Both need remeasuring.
+| White | 25% | 20 mm/s | spacing 0.15mm, inset 0.11mm, angle 45° |
+| Black | 27% | 10 mm/s | spacing 0.15mm, inset 0.11mm, angle 45° |
 
 ## SUNLU PETG (0.4 nozzle)
 
