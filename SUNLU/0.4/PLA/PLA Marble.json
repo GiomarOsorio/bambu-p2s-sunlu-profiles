@@ -279,7 +279,7 @@
     "none"
   ],
   "filament_settings_id": [
-    "PLA Marble"
+    "SUNLU PLA Marble"
   ],
   "filament_start_gcode": [
     "; filament start gcode\n"
@@ -359,7 +359,7 @@
     "0",
     "0"
   ],
-  "name": "PLA Marble",
+  "name": "SUNLU PLA Marble",
   "no_slow_down_for_cooling_on_outwalls": [
     "0"
   ],

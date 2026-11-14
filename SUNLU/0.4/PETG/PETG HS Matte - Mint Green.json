@@ -272,7 +272,7 @@
         "none"
     ],
     "filament_settings_id": [
-        "PETG HS Matte - Mint Green"
+        "SUNLU PETG HS Matte - Mint Green"
     ],
     "filament_start_gcode": [
         "; filament start gcode\n"
@@ -353,7 +353,7 @@
         "1",
         "1"
     ],
-    "name": "PETG HS Matte - Mint Green",
+    "name": "SUNLU PETG HS Matte - Mint Green",
     "no_slow_down_for_cooling_on_outwalls": [
         "0"
     ],

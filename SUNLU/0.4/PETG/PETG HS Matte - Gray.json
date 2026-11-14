@@ -272,7 +272,7 @@
         "none"
     ],
     "filament_settings_id": [
-        "PETG HS Matte - Gray"
+        "SUNLU PETG HS Matte - Gray"
     ],
     "filament_start_gcode": [
         "; filament start gcode\n"
@@ -353,7 +353,7 @@
         "1",
         "1"
     ],
-    "name": "PETG HS Matte - Gray",
+    "name": "SUNLU PETG HS Matte - Gray",
     "no_slow_down_for_cooling_on_outwalls": [
         "0"
     ],

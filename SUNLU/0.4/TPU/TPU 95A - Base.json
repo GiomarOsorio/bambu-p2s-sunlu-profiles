@@ -2,9 +2,9 @@
   "type": "filament",
   "filament_id": "SUN24003",
   "version": "2.5.0.66",
-  "name": "TPU 95A - Base",
+  "name": "SUNLU TPU 95A - Base",
   "filament_settings_id": [
-    "TPU 95A - Base"
+    "SUNLU TPU 95A - Base"
   ],
   "description": "SUNLU TPU 95A GEN2 base. Too soft for AMS. Print direct from external spool.",
   "from": "User",

@@ -1,6 +1,6 @@
 {
     "type": "filament",
-    "name": "OVERTURE PETG @BBL P2S",
+    "name": "Overture PETG - Base",
     "from": "User",
     "instantiation": "true",
     "cool_plate_temp": [
@@ -75,7 +75,7 @@
         "nil"
     ],
     "filament_settings_id": [
-        "OVERTURE PETG @BBL P2S"
+        "Overture PETG - Base"
     ],
     "filament_soluble": [
         "0"

@@ -272,7 +272,7 @@
         "none"
     ],
     "filament_settings_id": [
-        "PETG HS Matte - Base"
+        "SUNLU PETG HS Matte - Base"
     ],
     "filament_start_gcode": [
         "; filament start gcode\n"
@@ -353,7 +353,7 @@
         "1",
         "1"
     ],
-    "name": "PETG HS Matte - Base",
+    "name": "SUNLU PETG HS Matte - Base",
     "no_slow_down_for_cooling_on_outwalls": [
         "0"
     ],

@@ -92,7 +92,7 @@ Templates for calibrating new colors:
 1. Open **Bambu Studio**
 2. Go to the filament settings
 3. Click **Import** and select the `.json` profile file
-4. The profile will appear with the format `PETG - [Color]` for easy identification
+4. The profile will appear with the format `[Brand] [Material] - [Color]` (e.g. `SUNLU PETG - Black`, `SUNLU PETG - Black 0.2` for the 0.2 nozzle), so the brand shows first in the slicer and on the printer
 
 ### Calibrating a New Color
 

@@ -279,7 +279,7 @@
         "none"
     ],
     "filament_settings_id": [
-        "PLA - Base"
+        "SUNLU PLA - Base"
     ],
     "filament_start_gcode": [
         "; filament start gcode\n"
@@ -360,7 +360,7 @@
         "0",
         "0"
     ],
-    "name": "PLA - Base",
+    "name": "SUNLU PLA - Base",
     "no_slow_down_for_cooling_on_outwalls": [
         "0"
     ],

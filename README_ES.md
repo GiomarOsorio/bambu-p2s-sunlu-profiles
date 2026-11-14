@@ -26,24 +26,26 @@ Los nombres de los perfiles estan en ingles. Esta tabla te ayuda a identificar c
 
 | Nombre del Perfil | Color en Espanol |
 |---|---|
-| PETG - Black | Negro |
-| PETG - White | Blanco |
-| PETG - Red | Rojo |
-| PETG - Blue | Azul |
-| PETG - Yellow | Amarillo |
-| PETG - Olive Green | Verde Oliva |
-| PETG - Purple | Morado |
-| PETG - Pink | Rosa |
-| PETG - Skin Beige | Beige Piel |
-| PETG - Gray | Gris |
-| PETG - Base | Base (plantilla) |
-| PETG HS Matte - Mint Green | Verde Menta |
-| PETG HS Matte - Gray | Gris |
-| PETG HS Matte - Orange | Naranja |
-| PETG HS Matte - Base | Base HS Matte (plantilla) |
-| PLA - Base | Base PLA (plantilla) |
-| PLA Wood - Base | Base PLA Madera (plantilla) |
-| PLA Marble | PLA Marmol |
+| SUNLU PETG - Black | Negro |
+| SUNLU PETG - White | Blanco |
+| SUNLU PETG - Red | Rojo |
+| SUNLU PETG - Blue | Azul |
+| SUNLU PETG - Yellow | Amarillo |
+| SUNLU PETG - Olive Green | Verde Oliva |
+| SUNLU PETG - Purple | Morado |
+| SUNLU PETG - Pink | Rosa |
+| SUNLU PETG - Skin Beige | Beige Piel |
+| SUNLU PETG - Gray | Gris |
+| SUNLU PETG - Base | Base (plantilla) |
+| SUNLU PETG HS Matte - Mint Green | Verde Menta |
+| SUNLU PETG HS Matte - Gray | Gris |
+| SUNLU PETG HS Matte - Orange | Naranja |
+| SUNLU PETG HS Matte - Base | Base HS Matte (plantilla) |
+| SUNLU PLA - Base | Base PLA (plantilla) |
+| SUNLU PLA Wood - Base | Base PLA Madera (plantilla) |
+| SUNLU PLA Marble | PLA Marmol |
+| Overture PETG - Gold | Dorado (Overture) |
+| Sovol PETG Translucent - Christmas Green | Verde Navidad translucido (Sovol) |
 
 ---
 
@@ -119,7 +121,7 @@ Plantillas para calibrar nuevos colores:
 1. Abre **Bambu Studio**
 2. Ve a los ajustes de filamento
 3. Haz clic en **Import** y selecciona el archivo `.json`
-4. El perfil aparecera con el formato `PETG - [Color]`
+4. El perfil aparecera con el formato `[Marca] [Material] - [Color]` (ej. `SUNLU PETG - Black`, `SUNLU PETG - Black 0.2` en boquilla 0.2), asi la marca se ve primero en el laminador y en la impresora
 
 ### Calibrar un Nuevo Color
 

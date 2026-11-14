@@ -279,7 +279,7 @@
         "none"
     ],
     "filament_settings_id": [
-        "PLA Wood - Base"
+        "SUNLU PLA Wood - Base"
     ],
     "filament_start_gcode": [
         "; filament start gcode\n"
@@ -360,7 +360,7 @@
         "0",
         "0"
     ],
-    "name": "PLA Wood - Base",
+    "name": "SUNLU PLA Wood - Base",
     "no_slow_down_for_cooling_on_outwalls": [
         "0"
     ],

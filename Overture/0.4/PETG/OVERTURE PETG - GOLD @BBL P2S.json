@@ -1,6 +1,6 @@
 {
     "type": "filament",
-    "name": "OVERTURE PETG GOLD @BBL P2S",
+    "name": "Overture PETG - Gold",
     "description": "Ironing: 45% flow, 25 mm/s",
     "from": "User",
     "instantiation": "true",
@@ -82,7 +82,7 @@
         "nil"
     ],
     "filament_settings_id": [
-        "OVERTURE PETG GOLD @BBL P2S"
+        "Overture PETG - Gold"
     ],
     "filament_soluble": [
         "0"

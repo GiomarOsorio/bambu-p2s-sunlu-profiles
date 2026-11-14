@@ -38,7 +38,7 @@ square an object carrying its own override (`30-10` = 30 mm/s, 10% flow):
 
 | Plate | Filament |
 |-------|----------|
-| `test-initial-calibration-02(3).3mf` | PETG - Skin Beige 0.2 |
-| `test-initial-calibration-02(4).3mf` | PETG - Pink 0.2 |
-| `Ironing_Test_Complete_PETG.3mf` | PETG - White 0.2 |
-| `Cube_B.3mf` | PETG - Yellow (0.4) |
+| `test-initial-calibration-02(3).3mf` | SUNLU PETG - Skin Beige 0.2 |
+| `test-initial-calibration-02(4).3mf` | SUNLU PETG - Pink 0.2 |
+| `Ironing_Test_Complete_PETG.3mf` | SUNLU PETG - White 0.2 |
+| `Cube_B.3mf` | SUNLU PETG - Yellow (0.4) |
