@@ -41,6 +41,7 @@ Los nombres de los perfiles estan en ingles. Esta tabla te ayuda a identificar c
 | SUNLU PETG HS Matte - Gray | Gris |
 | SUNLU PETG HS Matte - Orange | Naranja |
 | SUNLU PETG HS Matte - Base | Base HS Matte (plantilla) |
+| SUNLU PETG HS Matte - Base 0.2 | Base HS Matte boquilla 0.2 (plantilla) |
 | SUNLU PLA - Base | Base PLA (plantilla) |
 | SUNLU PLA Wood - Base | Base PLA Madera (plantilla) |
 | SUNLU PLA Marble | PLA Marmol |
@@ -109,6 +110,7 @@ Los perfiles PLA usan **pre-enfriamiento 170C** y retraccion de corte 20mm.
 Plantillas para calibrar nuevos colores:
 - `PETG - Base.json` --- Punto de partida para nuevos colores PETG
 - `PETG HS Matte - Base.json` --- Punto de partida para colores HS Matte
+- `0.2/PETG/PETG HS Matte - Base.json` --- Punto de partida HS Matte para boquilla 0.2 (velocidad volumetrica max 1.0, retraccion 1.0 mm, retraccion de corte 10 mm, sin z-hop de filamento, primera capa = temperatura principal 255C)
 - `PLA - Base.json` --- Punto de partida para colores PLA
 - `PLA Wood - Base.json` --- Punto de partida para colores PLA Wood
 

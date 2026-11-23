@@ -80,6 +80,7 @@ PLA profiles use **pre-cooling 170C** and cut retraction 20mm.
 Templates for calibrating new colors:
 - `PETG - Base.json` --- Starting point for new PETG colors
 - `PETG HS Matte - Base.json` --- Starting point for HS Matte colors
+- `0.2/PETG/PETG HS Matte - Base.json` --- HS Matte starting point for the 0.2 nozzle (max volumetric speed 1.0, retraction 1.0 mm, cut retraction 10 mm, no filament z-hop, first layer = main temp 255C)
 - `PLA - Base.json` --- Starting point for PLA colors
 - `PLA Wood - Base.json` --- Starting point for PLA Wood colors
 
